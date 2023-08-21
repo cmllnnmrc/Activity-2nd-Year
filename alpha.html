@@ -1,0 +1,25 @@
+<html>
+   <head>
+      <title>Captcha</title>
+      <link rel="stylesheet" type="text/css" href="style1.css">
+      <script src="captcha.js"></script>
+   </head>
+
+<body onload="generateCaptcha();">
+   
+      <div class="container">
+         <h1>Security Check</h1>
+             <form>
+                <div class="checks"><input type="text" id="mainCaptcha" readonly="readonly">
+                <input type="button" id="refresh" value="Refresh" onclick="generateCaptcha();">
+               </div>
+                 <br>
+                 <div class="user">
+                 <input type="text" id="txtInput" placeholder="Type the text here">
+                <input id="Button1" type="button" value="Check" onclick="CheckValidCaptcha();">
+               </div>
+             </form>
+       </div>
+    
+</body>
+</html>
